@@ -74,12 +74,31 @@
   
   <h1>TML2023</h1>
   <div class="button-container">
-    <a href="https://tgszwdv.github.io/quinta"><button>QUINTA-FEIRA</button></a>
-    <a href="https://tgszwdv.github.io/sexta"><button>SEXTA-FEIRA</button></a>
-    <a href="https://tgszwdv.github.io/sabado"><button>SÁBADO</button></a>
-    <a href="https://tgszwdv.github.io/all"><button>ALL</button></a>
+    <button id="quinta-button">QUINTA-FEIRA</button></a>
+    <a href="https://tmlbrazil.github.io/sexta"><button>SEXTA-FEIRA</button></a>
+    <button id="sabado-button">SÁBADO</button></a>
+    <a href="https://tmlbrazil.github.io/all"><button id="all-button">ALL</button></a>
   </div>
-    
+
+    <script>
+    // Selecionar os botões pelos seus IDs
+    var quintaButton = document.getElementById("quinta-button");
+    var sabadoButton = document.getElementById("sabado-button");
+    var allButton = document.getElementById("all-button");
+
+    // Função para mostrar a mensagem de construção
+    function mostrarMensagem() {
+      alert("Página ainda em construção");
+    }
+       function mostrarMensagemAll() {
+      alert("Página ainda em Construção, contem apenas Phase1");
+    }
+
+    // Adicionar ouvintes de evento para os botões
+    quintaButton.addEventListener("click", mostrarMensagem);
+    sabadoButton.addEventListener("click", mostrarMensagem);
+    allButton.addEventListener("click", mostrarMensagemAll);
+  </script>
   <footer>
     <p>@tgszwdv</p>
   </footer>
